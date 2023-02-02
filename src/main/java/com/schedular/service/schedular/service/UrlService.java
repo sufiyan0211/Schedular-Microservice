@@ -24,7 +24,7 @@ public class UrlService {
     @Autowired
     private SlaveUrlRepository slaveUrlRepository;
 
-    @Scheduled(cron = "0 0 6 * * *")
+    @Scheduled(cron = "0 0 7 * * *")
     public void schedulerJob() {
         logger.info("Scheduler Job started on " + LocalDate.now().toString());
         List<Url> listOfAllUrls = listAllUrls();
